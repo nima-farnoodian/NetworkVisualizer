@@ -1,0 +1,199 @@
+#BIOGRID ID	ENTREZ GENE ID	SYSTEMATIC NAME	OFFICIAL SYMBOL	SYNONYMS	ORGANISM ID	ORGANISM NAME	INTERACTION COUNT	PTM COUNT	CHEMICAL INTERACTION COUNT	SOURCE	CATEGORY VALUES	CATEGORY IDS	CATEGORY TAGS	CATEGORY EVIDENCE VALUES	CATEGORY EVIDENCE IDS	CATEGORY EVIDENCE CLASSES	CATEGORY EVIDENCE METHODS	SUBCATEGORY VALUES	SUBCATEGORY IDS	SUBCATEGORY TAGS	SUBCATEGORY EVIDENCE VALUES	SUBCATEGORY EVIDENCE IDS	SUBCATEGORY EVIDENCE CLASSES	SUBCATEGORY EVIDENCE METHODS
+108621	2335	-	FN1	CIG|ED-B|FINC|FN|FNZ|GFND|GFND2|LETS|MSF	9606	Homo sapiens	869	32	1	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+108997	2735	-	GLI1	GLI	9606	Homo sapiens	195	1	0	BIOGRID	Trancription	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+109355	3110	-	MNX1	HB9|HLXB9|HOXHB9|SCRA1	9606	Homo sapiens	7	5	0	BIOGRID	Trancription	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+111308	5290	-	PIK3CA	CLOVE|CWS5|MCAP|MCM|MCMTC|PI3K|p110-alpha	9606	Homo sapiens	227	10	2	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+111632	5651	-	TMPRSS15	ENTK|PRSS7	9606	Homo sapiens	2	0	0	BIOGRID	Protease	-	-	-	-	-	-	-	-	-	-	-	-	-
+107442	1007	-	CDH9	-	9606	Homo sapiens	5	0	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+124167	84643	-	KIF2B	-	9606	Homo sapiens	86	1	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+113900	8295	-	TRRAP	PAF350/400|PAF400|STAF40|TR-AP|Tra1	9606	Homo sapiens	384	113	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+107250	799	-	CALCR	CRT|CT-R|CTR|CTR1	9606	Homo sapiens	8	0	10	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+109211	2956	-	MSH6	GTBP|GTMBP|HNPCC5|HSAP|p160	9606	Homo sapiens	236	299	0	BIOGRID	DNA Damage Response	-	-	-	-	-	-	-	-	-	-	-	-	-
+108452	2153	-	F5	FVL|PCCF|RPRGL1|THPH2	9606	Homo sapiens	22	0	6	BIOGRID	Protease|Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+128536	219438	-	OR5D18	OR11-143	9606	Homo sapiens	0	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+115958	10735	RP11-517O1.1	STAG2	SA-2|SA2|SCC3B|bA517O1.1	9606	Homo sapiens	297	200	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+126923	145581	-	LRFN5	C14orf146|FIGLER8|SALM5	9606	Homo sapiens	1	0	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+125965	126206	-	NLRP5	CLR19.8|MATER|NALP5|PAN11|PYPAF8	9606	Homo sapiens	13	1	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+115768	10512	-	SEMA3C	SEMAE|SemE	9606	Homo sapiens	47	0	0	BIOGRID	Translation	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+128550	219527	-	LRRC55	-	9606	Homo sapiens	64	0	0	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+115485	10188	-	TNK2	ACK|ACK-1|ACK1|p21cdc42Hs	9606	Homo sapiens	219	50	31	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+111630	5649	-	RELN	LIS2|PRO1598|RL	9606	Homo sapiens	33	2	0	BIOGRID	Cytoskeleton/Motility|Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+138312	442444	RP11-31H15.5	FAM47C	-	9606	Homo sapiens	0	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+120683	55503	-	TRPV6	ABP/ZF|CAT1|CATL|ECAC2|HSA277909|LP6728|ZFAB	9606	Homo sapiens	20	1	0	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+128764	221895	tcag7.981	JAZF1	TIP27|ZNF802	9606	Homo sapiens	60	3	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+126608	140453	-	MUC17	MUC3	9606	Homo sapiens	1	0	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+112174	6262	RP4-626J7.1	RYR2	ARVC2|ARVD2|RYR-2|RyR|VTSIP	9606	Homo sapiens	51	33	2	BIOGRID	Signal Transduction|Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+126099	128209	RP4-675G8.1	KLF17	ZNF393|Zfp393	9606	Homo sapiens	3	0	0	BIOGRID	Trancription	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+111700	5728	-	PTEN	10q23del|BZS|CWS1|DEC|GLM2|MHAM|MMAC1|PTEN1|TEP1	9606	Homo sapiens	1079	9	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+112919	7062	RP11-107M16.3	TCHH	THH|THL|TRHY	9606	Homo sapiens	18	1	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+110015	3815	-	KIT	C-Kit|CD117|PBT|SCFR	9606	Homo sapiens	179	25	31	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+107451	1016	-	CDH18	CDH14|CDH14L|CDH24	9606	Homo sapiens	5	28	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+111313	5295	-	PIK3R1	AGM7|GRB1|IMD36|p85|p85-ALPHA	9606	Homo sapiens	754	32	7	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+107456	1021	-	CDK6	MCPH12|PLSTIRE	9606	Homo sapiens	336	49	13	BIOGRID	Signal Transduction	-	-	-	-	-	-	Cancer driver	-	-	-	-	-	-
+110465	4322	-	MMP13	CLG3|MANDP1|MMP-13	9606	Homo sapiens	16	0	20	BIOGRID	Protease|Translation	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+113852	8216	-	LZTR1	BTBD29|LZTR-1|SWNTS2	9606	Homo sapiens	169	7	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+108488	2194	-	FASN	FAS|OA-519|SDR27X1	9606	Homo sapiens	972	142	13	BIOGRID	Chromatin Modification	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+112586	6708	-	SPTA1	EL2|HPP|HS3|SPH3|SPTA	9606	Homo sapiens	109	11	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+108118	1780	-	DYNC1I1	DNCI1|DNCIC1	9606	Homo sapiens	147	35	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+120228	54880	-	BCOR	ANOP2|MAA2|MCOPS2	9606	Homo sapiens	325	223	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+128082	170690	-	ADAMTS16	ADAMTS16s	9606	Homo sapiens	2	0	0	BIOGRID	Protease|Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+112306	6406	-	SEMG1	CT103|SEMG|SGI|dJ172H20.2	9606	Homo sapiens	110	3	0	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+129129	255967	RP11-179F17.3	PAN3	-	9606	Homo sapiens	70	90	0	BIOGRID	RNA binding	-	-	-	-	-	-	-	-	-	-	-	-	-
+108356	2042	-	EPHA3	EK4|ETK|ETK1|HEK|HEK4|TYRO4	9606	Homo sapiens	60	12	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+110893	4829	-	NMBR	BB1	9606	Homo sapiens	2	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+133417	390142	-	OR5D13	-	9606	Homo sapiens	0	1	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+124861	91662	-	NLRP12	CLR19.3|FCAS2|NALP12|PAN6|PYPAF7|RNO|RNO2	9606	Homo sapiens	12	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+123847	84033	RP5-1139B12.1	OBSCN	ARHGEF30|UNC89	9606	Homo sapiens	61	40	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+121835	58508	-	KMT2C	HALR|MLL3	9606	Homo sapiens	118	9	0	BIOGRID	Chromatin Modification	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+113748	8074	UNQ3027/PRO9828	FGF23	ADHR|FGFN|HPDR2|HYPF|PHPTC	9606	Homo sapiens	5	0	0	BIOGRID	Translation	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+119998	54502	-	RBM47	NET18	9606	Homo sapiens	218	20	0	BIOGRID	RNA binding	-	-	-	-	-	-	-	-	-	-	-	-	-
+131079	340578	RP11-13E5.1	DCAF12L2	WDR40C	9606	Homo sapiens	19	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+109643	3417	-	IDH1	HEL-216|HEL-S-26|IDCD|IDH|IDP|IDPC|PICD	9606	Homo sapiens	100	80	4	BIOGRID	Chromatin Modification	-	-	-	-	-	-	Cancer driver	-	-	-	-	-	-
+108601	2312	-	FLG	ATOD2	9606	Homo sapiens	98	1	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+121085	56145	-	PCDHA3	PCDH-ALPHA3	9606	Homo sapiens	55	2	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+121087	56147	-	PCDHA1	PCDH-ALPHA1	9606	Homo sapiens	8	4	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+112869	7010	-	TEK	CD202B|TIE-2|TIE2|VMCM|VMCM1	9606	Homo sapiens	40	1	2	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+108363	2049	-	EPHB3	ETK2|HEK2|TYRO6	9606	Homo sapiens	33	3	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+126143	128674	-	PROKR2	GPR73L1|GPR73b|GPRg2|HH3|KAL3|PKR2|dJ680N4.3	9606	Homo sapiens	7	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+123666	83481	-	EPPK1	EPIPL|EPIPL1	9606	Homo sapiens	164	217	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+130168	285643	-	KIF4B	-	9606	Homo sapiens	8	13	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+108164	1830	-	DSG3	CDHF6|PVA	9606	Homo sapiens	31	0	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+108493	2199	-	FBLN2	-	9606	Homo sapiens	57	0	0	BIOGRID	Translation	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+109170	2913	-	GRM3	GLUR3|GPRC1C|MGLUR3|mGlu3	9606	Homo sapiens	13	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+121437	57188	-	ADAMTSL3	ADAMTSL-3	9606	Homo sapiens	17	0	0	BIOGRID	Cytoskeleton/Motility|Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+132700	388468	-	POTEC	A26B2|CT104.6|POTE-18|POTE18	9606	Homo sapiens	20	2	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+115072	9723	-	SEMA3E	M-SEMAH|M-SemaK|SEMAH|coll-5	9606	Homo sapiens	2	2	0	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+110714	4629	-	MYH11	AAT4|FAA4|SMHC|SMMHC	9606	Homo sapiens	97	104	3	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	Cancer driver	-	-	-	-	-	-
+110711	4626	-	MYH8	MyHC-peri|MyHC-pn|gtMHC-F	9606	Homo sapiens	39	11	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+124672	90167	RP6-213H19.2	FRMD7	NYS|NYS1|XIPAN	9606	Homo sapiens	3	1	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+111082	5045	-	FURIN	FUR|PACE|PCSK3|SPC1	9606	Homo sapiens	81	19	2	BIOGRID	Protease	-	-	-	-	-	-	Cancer driver	-	-	-	-	-	-
+113309	7472	-	WNT2	INT1L1|IRP	9606	Homo sapiens	19	0	0	BIOGRID	Translation	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+124450	100132386	-	KRTAP4-9	KAP4.9	9606	Homo sapiens	0	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+116928	23345	RP1-130E4.2	SYNE1	8B|ARCA1|C6orf98|CPG2|EDMD4|MYNE1|Nesp1|SCAR8|dJ45H2.2	9606	Homo sapiens	88	557	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+108542	2251	-	FGF6	HBGF-6|HST2	9606	Homo sapiens	4	0	0	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+128591	219875	-	OR4D5	OR11-276	9606	Homo sapiens	0	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+132815	388698	RP1-14N1.3	FLG2	IFPS	9606	Homo sapiens	79	2	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+116339	11168	-	PSIP1	DFS70|LEDGF|PAIP|PSIP2|p52|p75	9606	Homo sapiens	147	166	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+109896	3690	-	ITGB3	BDPLT16|BDPLT2|CD61|GP3A|GPIIIa|GT	9606	Homo sapiens	82	7	18	BIOGRID	Cytoskeleton/Motility|Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+123587	81796	-	SLCO5A1	OATP-J|OATP-RP4|OATP5A1|OATPRP4|SLC21A15	9606	Homo sapiens	2	0	0	BIOGRID	Transporter	-	-	-	-	-	-	-	-	-	-	-	-	-
+108376	2064	-	ERBB2	CD340|HER-2|HER-2/neu|HER2|MLN 19|NEU|NGL|TKR1	9606	Homo sapiens	723	313	23	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+109893	3687	-	ITGAX	CD11C|SLEB6	9606	Homo sapiens	4	0	0	BIOGRID	Cytoskeleton/Motility|Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+124193	84674	-	CARD6	CINCIN1	9606	Homo sapiens	7	14	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+109711	3490	-	IGFBP7	AGM|FSTL2|IBP-7|IGFBP-7|IGFBP-7v|IGFBPRP1|MAC25|PSF|RAMSVPS|TAF	9606	Homo sapiens	17	7	7	BIOGRID	Cytoskeleton/Motility|Translation	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+106681	173	-	AFM	ALB2|ALBA|ALF	9606	Homo sapiens	14	0	0	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+107135	667	RP3-361I14.2	DST	BP240|BPA|BPAG1|CATX-15|CATX15|D6S1101|DMH|DT|EBSB2|HSAN6|MACF2	9606	Homo sapiens	192	433	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+109160	2903	RP11-297M9.2	GRIN2A	EPND|FESD|GluN2A|LKS|NMDAR2A|NR2A	9606	Homo sapiens	113	8	34	BIOGRID	Signal Transduction|Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+118142	27328	RP13-138P15.1	PCDH11X	PCDH-X|PCDH11|PCDHX|PPP1R119	9606	Homo sapiens	6	6	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+108276	1956	-	EGFR	ERBB|ERBB1|HER1|NISBD2|PIG61|mENA	9606	Homo sapiens	2972	203	55	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+116031	10818	-	FRS2	FRS2A|FRS2alpha|SNT|SNT-1|SNT1	9606	Homo sapiens	122	24	1	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+124100	84467	-	FBN3	-	9606	Homo sapiens	14	0	0	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+124804	91181	RP11-144B19.1	NUP210L	-	9606	Homo sapiens	3	10	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+110705	4620	-	MYH2	IBM3|MYH2A|MYHSA2|MYHas8|MyHC-2A|MyHC-IIa	9606	Homo sapiens	34	16	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+113077	7226	-	TRPM2	EREG1|KNP3|LTRPC2|NUDT9H|NUDT9L1|TRPC7	9606	Homo sapiens	5	18	0	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+108551	2260	-	FGFR1	BFGFR|CD331|CEK|FGFBR|FGFR-1|FLG|FLT-2|FLT2|HBGFR|HH2|HRTFDS|KAL2|N-SAM|OGD|bFGF-R-1	9606	Homo sapiens	460	118	16	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+107528	1103	-	CHAT	CHOACTASE|CMS1A|CMS1A2	9606	Homo sapiens	13	0	1	BIOGRID	Chromatin Modification	-	-	-	-	-	-	-	-	-	-	-	-	-
+108557	2266	PRO2061	FGG	-	9606	Homo sapiens	103	1	1	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+111576	5590	RP11-181G12.1	PRKCZ	PKC-ZETA|PKC2	9606	Homo sapiens	429	85	1	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+110434	4288	RP11-380J17.2	MKI67	KIA|MIB-|MIB-1|PPP1R105	9606	Homo sapiens	565	494	0	BIOGRID	Chromatin Modification	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+136660	440533	-	PSG8	PSG1	9606	Homo sapiens	69	0	0	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+111262	5243	-	ABCB1	ABC20|CD243|CLCS|GP170|MDR1|P-GP|PGY1	9606	Homo sapiens	43	160	15	BIOGRID	Cytoskeleton/Motility|Transporter	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+121069	56129	-	PCDHB7	PCDH-BETA7	9606	Homo sapiens	55	3	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+107053	577	-	BAI3	-	9606	Homo sapiens	13	3	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+121297	56979	-	PRDM9	MEISETZ|MSBP3|PFM6|PRMD9|ZNF899	9606	Homo sapiens	7	0	0	BIOGRID	Chromatin Modification	-	-	-	-	-	-	-	-	-	-	-	-	-
+119737	53335	-	BCL11A	BCL11A-L|BCL11A-S|BCL11A-XL|BCL11a-M|CTIP1|EVI9|HBFQTL5|ZNF856	9606	Homo sapiens	153	33	0	BIOGRID	Trancription	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+123767	83851	-	SYT16	CHR14SYT|SYT14L|Strep14|syt14r|yt14r	9606	Homo sapiens	52	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+118178	27445	tcag7.1085	PCLO	ACZ	9606	Homo sapiens	33	27	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+608805	728378	-	POTEF	A26C1B|ACTB|POTE2alpha|POTEACTIN	9606	Homo sapiens	283	51	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+130387	286464	RP13-11B7.1	CHDC2	CXorf59	9606	Homo sapiens	4	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+114353	8826	-	IQGAP1	HUMORFA01|SAR1|p195	9606	Homo sapiens	526	82	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+115604	10320	tcag7.1178	IKZF1	Hs.54452|IK1|IKAROS|LYF1|LyF-1|PPP1R92|PRO0758|ZNFN1A1	9606	Homo sapiens	326	212	6	BIOGRID	Trancription	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+122161	64409	-	WBSCR17	GALNACT17|GALNT16|GALNT20|GALNTL3|GalNAc-T5L	9606	Homo sapiens	1	1	0	BIOGRID	Secretion	-	-	-	-	-	-	-	-	-	-	-	-	-
+114934	9564	hCG_1980470	BCAR1	CAS|CAS1|CASS1|CRKAS|P130Cas	9606	Homo sapiens	635	95	0	BIOGRID	Cytoskeleton/Motility|Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+107431	996	-	CDC27	ANAPC3|APC3|CDC27Hs|D0S1430E|D17S978E|H-NUC|HNUC|NUC2	9606	Homo sapiens	659	382	0	BIOGRID	Ubiquitin Proteasome System	-	-	-	-	-	-	-	-	-	-	-	-	-
+117716	26511	-	CHIC2	BTL	9606	Homo sapiens	81	11	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+119920	54165	-	DCUN1D1	DCNL1|DCUN1L1|RP42|SCCRO|SCRO|Tes3	9606	Homo sapiens	406	103	7	BIOGRID	Ubiquitin Proteasome System	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+126520	138724	-	C9orf131	-	9606	Homo sapiens	2	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+119923	54206	CTA-215D11.2	ERRFI1	GENE-33|MIG-6|MIG6|RALT	9606	Homo sapiens	141	9	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+123280	80731	-	THSD7B	-	9606	Homo sapiens	27	1	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+121096	56163	RP11-756A22.1	RNF17	Mmip-2|SPATA23|TDRD4	9606	Homo sapiens	7	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+110446	4300	-	MLLT3	AF9|YEATS3	9606	Homo sapiens	185	7	0	BIOGRID	Chromatin Modification	-	-	-	-	-	-	Cancer driver	-	-	-	-	-	-
+575632	653240	hCG_2005471	KRTAP4-11	KAP4.11|KAP4.14|KRTAP4-14|KRTAP4.14	9606	Homo sapiens	83	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+111860	5925	RP11-174I10.1	RB1	OSRC|PPP1R130|RB|p105-Rb|pRb|pp110	9606	Homo sapiens	937	46	5	BIOGRID	Trancription	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+114834	9444	-	QKI	Hqk|QK|QK1|QK3|hqkI	9606	Homo sapiens	171	55	0	BIOGRID	RNA binding	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+126131	128553	RP5-823G15.3	TSHZ2	C20orf17|OVC10-2|TSH2|ZABC2|ZNF218	9606	Homo sapiens	33	2	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+115104	9757	-	KMT2B	HRX2|MLL1B|MLL2|MLL4|TRX2|WBP-7|WBP7	9606	Homo sapiens	123	36	0	BIOGRID	Chromatin Modification	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+111904	5972	-	REN	HNFJ2	9606	Homo sapiens	18	0	41	BIOGRID	Protease|Translation	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+108833	2559	-	GABRA6	-	9606	Homo sapiens	20	0	78	BIOGRID	Signal Transduction|Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+108835	2561	-	GABRB2	-	9606	Homo sapiens	11	10	57	BIOGRID	Signal Transduction|Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+114335	8807	-	IL18RAP	ACPL|CD218b|CDw218b|IL-18R-beta|IL-18RAcP|IL-18Rbeta|IL-1R-7|IL-1R7|IL-1RAcPL|IL18RB	9606	Homo sapiens	7	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+126359	133482	-	SLCO6A1	CT48|GST|OATP-I|OATP6A1|OATPY	9606	Homo sapiens	26	0	0	BIOGRID	Transporter	-	-	-	-	-	-	-	-	-	-	-	-	-
+111587	5601	-	MAPK9	JNK-55|JNK2|JNK2A|JNK2ALPHA|JNK2B|JNK2BETA|PRKM9|SAPK|SAPK1a|p54a|p54aSAPK	9606	Homo sapiens	300	109	1	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+122076	64123	hCG_14667	ELTD1	ETL|KPG_003	9606	Homo sapiens	2	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+110358	4193	-	MDM2	ACTFS|HDMX|hdm2	9606	Homo sapiens	2403	95	91	BIOGRID	Ubiquitin Proteasome System	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+110359	4194	RP11-430C7.1	MDM4	HDMX|MDMX|MRP1	9606	Homo sapiens	390	29	5	BIOGRID	Ubiquitin Proteasome System	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+108016	1649	-	DDIT3	CEBPZ|CHOP|CHOP-10|CHOP10|GADD153	9606	Homo sapiens	198	2	0	BIOGRID	Trancription	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+138665	448834	-	KPRP	C1orf45	9606	Homo sapiens	256	1	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+111182	5156	-	PDGFRA	CD140A|PDGFR-2|PDGFR2|RHEPDGFRA	9606	Homo sapiens	353	25	15	BIOGRID	Signal Transduction	-	-	-	-	-	-	Cancer driver	-	-	-	-	-	-
+107028	546	RP5-875J14.1	ATRX	ATR2|JMS|MRXHF1|RAD54|RAD54L|SFM1|SHS|XH2|XNP|ZNF-HX	9606	Homo sapiens	289	211	0	BIOGRID	Chromatin Modification	-	-	-	-	-	-	-	-	-	-	-	-	-
+116194	11001	-	SLC27A2	ACSVL1|FACVL1|FATP2|HsT17226|VLACS|VLCS|hFACVL1	9606	Homo sapiens	151	37	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+125031	93492	RP11-408K19.2	TPTE2	TPIP	9606	Homo sapiens	108	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+117510	26047	-	CNTNAP2	AUTS15|CASPR2|CDFE|NRXN4|PTHSL1	9606	Homo sapiens	21	2	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+108096	1756	GS1-19O24.1	DMD	BMD|CMD3B|DXS142|DXS164|DXS206|DXS230|DXS239|DXS268|DXS269|DXS270|DXS272|MRX85	9606	Homo sapiens	142	227	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+113010	7157	-	TP53	BCC7|LFS1|P53|TRP53	9606	Homo sapiens	4817	223	2	BIOGRID	Trancription	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+108534	2243	-	FGA	Fib2	9606	Homo sapiens	92	1	15	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+121915	60482	-	SLC5A7	CHT|CHT1|HMN7A|hCHT	9606	Homo sapiens	9	1	0	BIOGRID	Transporter	-	-	-	-	-	-	-	-	-	-	-	-	-
+107492	1063	RP11-262H5.1	CENPF	CENF|PRO1779|hcp-1	9606	Homo sapiens	102	224	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+130237	285877	-	POM121L12	-	9606	Homo sapiens	0	0	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+108150	1816	-	DRD5	DBDR|DRD1B|DRD1L2	9606	Homo sapiens	8	0	43	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+109780	3566	582J2.1	IL4R	CD124|IL-4RA|IL4RA	9606	Homo sapiens	70	16	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+127439	152273	-	FGD5	ZFYVE23	9606	Homo sapiens	24	2	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+131543	348980	-	HCN1	BCNG-1|BCNG1|EIEE24|HAC-2	9606	Homo sapiens	68	3	0	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+107463	1029	-	CDKN2A	ARF|CDK4I|CDKN2|CMM2|INK4|INK4A|MLM|MTS-1|MTS1|P14|P14ARF|P16|P16-INK4A|P16INK4|P16INK4A|P19|P19ARF|TP16	9606	Homo sapiens	549	2	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+126362	133558	-	MROH2B	HEATR7B2	9606	Homo sapiens	4	8	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+112045	6125	MSTP030	RPL5	DBA6|L5|PPP1R135	9606	Homo sapiens	566	35	0	BIOGRID	Other	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+115551	10257	RP11-74A12.1	ABCC4	MOAT-B|MOATB|MRP4	9606	Homo sapiens	90	250	0	BIOGRID	Transporter	-	-	-	-	-	-	-	-	-	-	-	-	-
+107464	1030	RP11-149I2.1	CDKN2B	CDK4I|INK4B|MTS2|P15|TP15|p15INK4b	9606	Homo sapiens	103	1	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+107465	1031	RP11-278J17.2	CDKN2C	INK4C|p18|p18-INK4C	9606	Homo sapiens	149	3	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+112240	6336	-	SCN10A	FEPS2|Nav1.8|PN3|SNS|hPN3	9606	Homo sapiens	1	3	51	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+119750	53353	-	LRP1B	LRP-DIT|LRPDIT	9606	Homo sapiens	86	16	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+110438	4292	-	MLH1	COCA2|FCC2|HNPCC|HNPCC2|hMLH1	9606	Homo sapiens	411	159	0	BIOGRID	DNA Damage Response	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+109339	3092	UNQ2786	HIP1	HIP-I|ILWEQ	9606	Homo sapiens	115	69	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+109602	3371	-	TNC	150-225|DFNA56|GMEM|GP|HXB|JI|TN|TN-C	9606	Homo sapiens	23	36	0	BIOGRID	Cytoskeleton/Motility|Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+111695	5723	-	PSPH	PSP|PSPHD	9606	Homo sapiens	24	38	3	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+107233	779	-	CACNA1S	CACNL1A3|CCHL1A3|Cav1.1|HOKPP|HOKPP1|MHS5|TTPP1|hypoPP	9606	Homo sapiens	8	0	25	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+116298	11124	CGI-03	FAF1	HFAF1s|UBXD12|UBXN3A|hFAF1	9606	Homo sapiens	462	25	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+111753	5789	-	PTPRD	HPTP|HPTPD|HPTPDELTA|PTPD|RPTPDELTA	9606	Homo sapiens	144	196	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+114272	8735	-	MYH13	MyHC-IIL|MyHC-eo	9606	Homo sapiens	37	7	0	BIOGRID	Cytoskeleton/Motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+114724	9312	-	KCNB2	KV2.2	9606	Homo sapiens	55	11	1	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+107141	673	-	BRAF	B-RAF1|BRAF1|NS7|RAFB1	9606	Homo sapiens	332	118	16	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+106524	2	-	A2M	A2MD|CPAMD5|FWP007|S863-7	9606	Homo sapiens	170	0	8	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+127031	147040	-	KCTD11	C17orf36|KCASH1|REN|REN/KCTD11	9606	Homo sapiens	9	0	0	BIOGRID	Ubiquitin Proteasome System	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+116268	11086	-	ADAM29	CT73|svph1	9606	Homo sapiens	1	0	0	BIOGRID	Cytoskeleton/Motility|Protease	-	-	-	-	-	-	-	-	-	-	-	-	-
+110611	4507	-	MTAP	BDMF|DMSFH|DMSMFH|HEL-249|LGMBF|MSAP|c86fus	9606	Homo sapiens	69	11	12	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+127102	147945	-	NLRP4	CLR19.5|CT58|NALP4|PAN2|PYPAF4|RNH2	9606	Homo sapiens	9	1	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+112239	6335	-	SCN9A	ETHA|FEB3B|GEFSP7|HSAN2D|NE-NA|NENA|Nav1.7|PN1|SFNP	9606	Homo sapiens	6	8	14	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+111105	5071	KB-152G3.1	PARK2	AR-JP|LPRS2|PDJ|PRKN	9606	Homo sapiens	1434	50	1	BIOGRID	Ubiquitin Proteasome System	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+122896	79799	UNQ2559/PRO6239	UGT2A3	-	9606	Homo sapiens	6	0	0	BIOGRID	Secretion	-	-	-	-	-	-	-	-	-	-	-	-	-
+106851	355	RP11-399O19.7	FAS	ALPS1A|APO-1|APT1|CD95|FAS1|FASTM|TNFRSF6	9606	Homo sapiens	280	48	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+112540	6657	-	SOX2	ANOP3|MCOPS3	9606	Homo sapiens	693	2	0	BIOGRID	Trancription	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+112547	6664	-	SOX11	MRD27	9606	Homo sapiens	4	5	0	BIOGRID	Trancription	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+123545	81608	-	FIP1L1	FIP1|Rhe|hFip1	9606	Homo sapiens	220	294	0	BIOGRID	RNA binding	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+122834	79718	-	TBL1XR1	C21|DC42|IRA1|TBLR1	9606	Homo sapiens	198	85	0	BIOGRID	Trancription	-	-	-	-	-	-	-	-	-	-	-	-	-
+125226	113146	-	AHNAK2	C14orf78	9606	Homo sapiens	113	95	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+115371	10060	-	ABCC9	ABC37|ATFB12|CANTU|CMD1O|SUR2	9606	Homo sapiens	5	48	8	BIOGRID	Transport/Ion Channel	-	-	-	-	-	-	-	-	-	-	-	-	-
+115014	9656	DAAP-285E11.7	MDC1	NFBD1	9606	Homo sapiens	559	39	0	BIOGRID	DNA Damage Response	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+124248	84767	-	TRIM51	SPRYD5|TRIM51A	9606	Homo sapiens	3	1	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+119987	54490	-	UGT2B28	-	9606	Homo sapiens	5	0	0	BIOGRID	Secretion	-	-	-	-	-	-	-	-	-	-	-	-	-
+109992	3791	-	KDR	CD309|FLK1|VEGFR|VEGFR2	9606	Homo sapiens	125	1	33	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+109993	3792	-	KEL	CD238|ECE3	9606	Homo sapiens	12	0	0	BIOGRID	Protease	-	-	-	-	-	-	-	-	-	-	-	-	-
+110235	4057	-	LTF	GIG12|HEL110|HLF2|LF	9606	Homo sapiens	132	3	13	BIOGRID	Protease|Translation	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
+107454	1019	-	CDK4	CMM3|PSK-J3	9606	Homo sapiens	630	10	10	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+110836	4763	-	NF1	NFNS|VRNF|WSS	9606	Homo sapiens	192	105	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Tumor suppressor	-	-	-	-	-	-
+107675	1278	-	COL1A2	OI4	9606	Homo sapiens	56	1	1	BIOGRID	Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+113031	7179	-	TPTE	CT44|PTEN2	9606	Homo sapiens	167	1	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+132934	389015	-	SLC9A4	NHE4	9606	Homo sapiens	4	5	1	BIOGRID	Transporter	-	-	-	-	-	-	-	-	-	-	-	-	-
+123785	83872	GS1-174L6.1	HMCN1	ARMD1|FBLN6|FIBL-6|FIBL6	9606	Homo sapiens	7	1	0	BIOGRID	Cytoskeleton/Motility|Translation	-	-	-	-	-	-	-	-	-	-	-	-	-
+128548	219493	-	OR5AR1	OR11-209	9606	Homo sapiens	0	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+128542	219473	-	OR8K3	OR11-181	9606	Homo sapiens	0	0	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	-	-	-	-	-	-	-
+125712	121227	UNQ287/PRO326/PRO335	LRIG3	LIG3	9606	Homo sapiens	60	8	0	BIOGRID	Other	-	-	-	-	-	-	-	-	-	-	-	-	-
+126514	138474	-	TAF1L	TAF2A2	9606	Homo sapiens	13	5	0	BIOGRID	Signal Transduction	-	-	-	-	-	-	Oncogene	-	-	-	-	-	-
