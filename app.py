@@ -1545,6 +1545,6 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
 
 
 if __name__ == '__main__':
-    app.run_server(port=8000, host='127.0.0.1')
+    app.run_server(debug=False)
 
 #app.run_server(mode='jupyterlab')
