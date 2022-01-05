@@ -7,7 +7,7 @@ import numpy as np
 from math import ceil, floor
 #import matplotlib.pyplot as plt
 import numpy as np
-# import matplotlib.colors as colors 
+# import matplotlib.colors as colors
 import time
 import random
 #import sklearn.metrics as mt
@@ -46,7 +46,7 @@ def create_graph(nodes,edges,node_emphasize=True):
     if node_emphasize==True:
         #G.add_nodes_from(list(nodes["#BIOGRID ID"]))
         #for nodeid in range(nodes.shape[0]):
-        for row in nodes.iterrows():    
+        for row in nodes.iterrows():
             node=row[1].loc["#BIOGRID ID"]
             OFFICIAL_SYMBOL=row[1].loc["OFFICIAL SYMBOL"]
             node_Entrez=row[1].loc["ENTREZ GENE ID"]
@@ -56,7 +56,7 @@ def create_graph(nodes,edges,node_emphasize=True):
             node_label[OFFICIAL_SYMBOL.lower()]=node
         for row in edges.iterrows():
             nodeA_bioGrid=row[1].loc["BioGRID ID Interactor A"]
-            
+
             nodeB_bioGrid=row[1].loc["BioGRID ID Interactor B"]
 
             if nodeA_bioGrid in G and nodeB_bioGrid in G:
@@ -65,12 +65,12 @@ def create_graph(nodes,edges,node_emphasize=True):
                 #G.add_edge(1, 2, weight=4.7)
                 edge_bioGrid=row[1].loc["#BioGRID Interaction ID"]
                 edge_Throughput=row[1].loc["Throughput"]
-                edge_OTC=row[1].loc["Ontology Term Categories"]  
-                edge_OTN=row[1].loc["Ontology Term Names"] 
-                edge_OTQN=row[1].loc["Ontology Term Qualifier Names"] 
-                G.add_edge(nodeA_bioGrid,nodeB_bioGrid, edge_bioGrid=edge_bioGrid,edge_Throughput=edge_Throughput,edge_OTC=edge_OTC,edge_OTN=edge_OTN,edge_OTQN=edge_OTQN)    
-            
-    else:    
+                edge_OTC=row[1].loc["Ontology Term Categories"]
+                edge_OTN=row[1].loc["Ontology Term Names"]
+                edge_OTQN=row[1].loc["Ontology Term Qualifier Names"]
+                G.add_edge(nodeA_bioGrid,nodeB_bioGrid, edge_bioGrid=edge_bioGrid,edge_Throughput=edge_Throughput,edge_OTC=edge_OTC,edge_OTN=edge_OTN,edge_OTQN=edge_OTQN)
+
+    else:
         for row in edges.iterrows():
             nodeA_bioGrid=row[1].loc["BioGRID ID Interactor A"]
             nodeA_Entrez=row[1].loc["Entrez Gene Interactor A"]
@@ -95,12 +95,12 @@ def create_graph(nodes,edges,node_emphasize=True):
 
             edge_bioGrid=row[1].loc["#BioGRID Interaction ID"]
             edge_Throughput=row[1].loc["Throughput"]
-            edge_OTC=row[1].loc["Ontology Term Categories"]  
-            edge_OTN=row[1].loc["Ontology Term Names"] 
-            edge_OTQN=row[1].loc["Ontology Term Qualifier Names"] 
+            edge_OTC=row[1].loc["Ontology Term Categories"]
+            edge_OTN=row[1].loc["Ontology Term Names"]
+            edge_OTQN=row[1].loc["Ontology Term Qualifier Names"]
 
             G.add_edge(nodeA_bioGrid,nodeB_bioGrid, edge_bioGrid=edge_bioGrid,edge_Throughput=edge_Throughput,edge_OTC=edge_OTC,edge_OTN=edge_OTN,edge_OTQN=edge_OTQN)
-            
+
     return G,node_label
 
 def get_communities(G):
@@ -132,12 +132,12 @@ def create_elements(G,node_class,G_org):
     {'data': {'id': str(node)},
      'selectable': True,'locked': False,'grabbable': True,'classes': str(node_class[node])} for node in G
     ]
-    
+
     #Cy_edges_without_label=[
     #    {'data': {'source': str(edge[0]), 'target': str(edge[1]), 'label': str(edge[0])+">"+str(edge[1])}} for edge in G.edges()
     #]
     nodes_edges_Cy_without_label=Cy_nodes_without_label+Cy_edges
-    
+
     return nodes_edges_Cy_with_label,nodes_edges_Cy_without_label
 
 def create_unique_class(G):
@@ -149,13 +149,13 @@ def create_unique_class(G):
 def best_classes(classes):
     best_comunities={}
     for i in list(classes.values()):
-        best_comunities[i]=best_comunities.get(i,0)+1 
+        best_comunities[i]=best_comunities.get(i,0)+1
     best=[i[0] for i in sorted(best_comunities.items())[:23]]
     # Return only best 23 classes
     return best
 
 def coloring (cids):
-    # cids is a list of class number that should be colored. Note that the list should contain 23 class ids as the last color is meant for the rest (There are at most 24 colors) 
+    # cids is a list of class number that should be colored. Note that the list should contain 23 class ids as the last color is meant for the rest (There are at most 24 colors)
     col_swatch = px.colors.qualitative.Dark24
     style=[
             {
@@ -187,7 +187,7 @@ def degree_dist_df(G,q,selected_deg):
     return df
 
 def get_centrality(G,centrality):
-    res_normalized={} 
+    res_normalized={}
     if centrality=="betweenness":
         res=nx.centrality.betweenness_centrality(G)
     elif centrality=="eigenvector":
@@ -210,12 +210,12 @@ def shortest_path(G,source,target):
         shortest_path_res=nx.shortest_paths.shortest_path(nx.Graph(G),source,target)
     except:
         shortest_path_res=None
-    
+
     if shortest_path_res is not None:
         for i in range(len(shortest_path_res)-1):
             left=shortest_path_res[i]
             right=shortest_path_res[i+1]
-            edges.append((left,right))  
+            edges.append((left,right))
     else:
         edges=None
     return edges
@@ -226,7 +226,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 #app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
 #app=dash.Dash(__name__, external_stylesheets=external_stylesheets,suppress_callback_exceptions=True)
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.SLATE])
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.SLATE],  meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}])
 #app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
 cyto.load_extra_layouts()
 
@@ -343,7 +343,7 @@ def node_centrality():
             value='None',
             clearable=False,
             options=[
-                {'label': "None", 'value': "None"}           
+                {'label': "None", 'value': "None"}
             ])
 
 def show_node_label():
@@ -384,7 +384,7 @@ tab_selected_style = {
 def node_color():
     return daq.ColorPicker(
     label='Node Color',
-    value=dict(hex= '#8408E6') 
+    value=dict(hex= '#8408E6')
 )
 
 def node_label_color():
@@ -407,7 +407,7 @@ def background_color():
 )
 
 tabs_styles = {
-    'height': '44px' , 
+    'height': '44px' ,
     #'width':'50px',
     'backgroundColor': '#272b30'
 }
@@ -415,7 +415,7 @@ def color_tab():
     return dcc.Tabs(id="color_tab",style=tabs_styles,
         children=[
         dcc.Tab(label='Node', children=[node_color()],style=tab_style, selected_style=tab_selected_style),
-        dcc.Tab(label='Lable', children=[node_label_color()],style=tab_style, selected_style=tab_selected_style), 
+        dcc.Tab(label='Lable', children=[node_label_color()],style=tab_style, selected_style=tab_selected_style),
         dcc.Tab(label='Edge', children=[edge_color()],style=tab_style, selected_style=tab_selected_style),
         dcc.Tab(label='BG', children=[background_color()],style=tab_style, selected_style=tab_selected_style),
     ])
@@ -457,12 +457,12 @@ def drawGraph():
                 stylesheet=my_style_sheet
                 )
             ])
-        ),  
+        ),
     ])
 def degree_graph():
     return dcc.Graph(id='deg_dist_bar')
 
-      
+
 def slide_edge_opacity():
     return dcc.Slider(
                 id="edge_opacity",
@@ -522,24 +522,24 @@ app.layout = html.Div([
     controls=True,
     indicators=False,
     ),
-    
+
     #html.H1("Bio Visualizer", style={'text-align': 'center', 'color' : 'white' }),
     #dbc.CardImg(src="https://s4.uupload.ir/files/h4_3sg4.jpg", top=True),
     dbc.Card(
         dbc.CardBody([
             dbc.Row([
                 dbc.Col([
-                    
+
                     dbc.Row([
                         dbc.CardImg(src="https://s4.uupload.ir/files/logo_mi9z.png", top=True),
                     ],style={"width": "20rem", "align":'center'}),
-                    
+
                     html.Br(),
-                    
+
                     dbc.Row([
                     html.H1("BioVisualizer", style={'text-align': 'center', 'color' : '#B052FA' }),
                     html.H5("Glioblastoma Gene Interaction Visualization Dashboard", style={'text-align': 'center', 'color' : 'white' }),
-                   
+
                     ],style={"width": "20rem"}),
                     html.Br(),
                     html.Br(),
@@ -549,100 +549,100 @@ app.layout = html.Div([
                             html.Div(id='output-node-data'),
                             upload_edge(),
                             html.Div(id='output-edge-data'),
-                    
-                        
+
+
                      ],style={"width": "20rem"}),
-                    
+
                     dbc.Row([
                             build_button(),
                             build_error(),
                     ],style={"width": "8rem" ,'vertical-align': 'middle', "margin-left": "90px"}),
-                    
-                   
+
+
                     dbc.Row([
                             html.Div(id='print_info'),
                     ],style={"width": "25rem" ,'vertical-align': 'middle', "margin-left": "10px"}),
-                    
+
                     html.Br(),
                     dbc.Row([
                       html.Hr(style={"size":150, "width":"200%" ,"color":"white", "margin-left": "90px"}) ,
-                        
+
                      ],align='center' ,style={"width": "10rem"}),
-                    
+
                     html.Br(),
-                    
-                    
+
+
                     html.Br(),
-                    
-                    
-                    
+
+
+
                     dbc.Row([
-                        
+
                     ]),
-                    
+
                     html.Br(),
-                    
+
                     dbc.Row([
-                        
-                        
+
+
                     ],style={"width": "15rem"}),
-                    
-                    
-                        
+
+
+
                     dbc.Row([
 
                         #dbc.Button("Upload your data", color="primary"),
                     ],style={"width": "15rem"}),
 
                     #########button
-                    
+
 
 
 
 
                     ###############
-                     
 
-                    
-                       
-                    
-            ],width=2),
-                                      
-                
+
+
+
+
+            ],width=3),
+
+
                 dbc.Col([
                     dbc.Row([
                         dbc.Col([
                                 html.P("Please Draw Network"),
                                 GCC_button(),
-                                                        
-                        ],width=5),
-                        
-                        
+
+                        ],width=3),
+
+
                         dbc.Col([
                             html.P("Please Select layout"),
                             layout_dropDown(),
-                                                        
-                        ],width=3),
-                        
+
+                        ],width=2),
+
                         dbc.Col([
-                            html.P("Metrics Visualization mode"),
+                            html.P("Visualization Metrics"),
                             node_centrality(),
-    
-                       ],width=3),
+
+                       ],width=2),
                     ], style={"width": "73rem" ,'vertical-align': 'right', "margin-left": "0px"} ),
-                       
+
                      dbc.Row([
-                        
+
                         drawGraph(),
                         show_node_label(),
-                     
-                    ]),    
-                    
-                    
-                                       
-                ],width=7),    
-                
-                
+
+                    ]),
+
+
+
+                ],width=6),
+
+
                 dbc.Col([
                     dbc.Row([
                         degree_graph(),
@@ -653,16 +653,16 @@ app.layout = html.Div([
                             html.P(
                                 [Msg,
                             html.Br(),
-                            html.A('Click here to see the tutorial.', href='/files/report-tutorial.pdf'),
+                            html.A('Click here to see the tutorial.', href='https://github.com/nima-farnoodian/BioVisualizer/blob/main/files/report-tutorial.pdf'),
                             html.Br(),
-                            html.A('Click here to download sample Nodes dataset.', href='/files/nodes.txt'),
+                            html.A('Click here to download sample Nodes dataset.', href='https://raw.githubusercontent.com/nima-farnoodian/BioVisualizer/main/files/nodes.txt'),
                             html.Br(),
-                            html.A('Click here to download sample Edges dataset.', href='/files/edges.txt')
+                            html.A('Click here to download sample Edges dataset.', href='https://raw.githubusercontent.com/nima-farnoodian/BioVisualizer/main/files/edges.txt')
                             ]
-                            
-                                
+
+
                             ),
-                            
+
                             id="offcanvas",
                             title="BioVisualizer",
                             is_open=False,
@@ -682,22 +682,22 @@ app.layout = html.Div([
                         #check_color()
                         #drawFigure()
                     ]),
-                    
-                    
-                ],width=3),  
-                
+
+
+                ],width=3),
+
                 ], align='center'),
-            
+
                 dbc.Row([
-                    
+
                     dbc.Col([
                         dbc.Row([
                         dbc.Accordion(
-                            [  
-                                                    
+                            [
+
                             dbc.AccordionItem(
                                 [
-                                    
+
                                     Compute_degree(),
                                     Compute_betweenness(),
                                     Compute_closeness(),
@@ -740,11 +740,11 @@ app.layout = html.Div([
                                 title="Shortest-path")
                             ]
                                 ),
- 
+
                     ],style={"width": "20rem"}, align='center'),
-                    
+
                     ],width=3),
-                    
+
                     dbc.Col([
                         dbc.Row([
                         dbc.Col([
@@ -752,37 +752,33 @@ app.layout = html.Div([
                              slide_edge_opacity(),
                              slide_size_edge()
                         ],width=3),
-                        
+
                         dbc.Col([
                              html.P("Node Opacity", style={'textAlign': 'center'}),
                             slide_node_opacity(),
                             slide_size_node()
                         ],width=3),
-                            
+
                             dbc.Col([
                                  color_tab(),
-                        ],width=3),
-                            
-                            dbc.Col([
-                                html.Br(),
-                                html.Br(),
-                                html.Br(),
-                                apply_coloring(),
-                        ],width=2),
-                           
-                           
+                                 apply_coloring(),
+                        ],width=3, align='center'),
+
+
+
+
 
                     ]),
-                    
-                        
-                    ],width=7),
-                    
+
+
+                    ],width=8),
+
                     dbc.Col([
                     ],width=3),
-                    
+
                 ]),
-    
-   
+
+
         ]), color = 'dark'
     )
 ])
@@ -875,8 +871,8 @@ def upload_edge(list_of_contents, list_of_names, list_of_dates):
             parse_contents_edge(c, n, d) for c, n, d in
             zip(list_of_contents, list_of_names, list_of_dates)]
         return children
-    
-    
+
+
 @app.callback(Output('upload-node', 'children'),
               Input('upload-node', 'contents'),
               State('upload-node', 'filename'),
@@ -887,10 +883,10 @@ def upload_node(list_of_contents, list_of_names, list_of_dates):
         children = [
             parse_contents_node(c, n, d) for c, n, d in
             zip(list_of_contents, list_of_names, list_of_dates)]
-                
+
         return children
-     
-    
+
+
 @app.callback(Output('is_build', 'data'),
               Output('print_info', 'children'),
                 Input('build', 'n_clicks'),
@@ -911,7 +907,7 @@ def build_graph(n, node_df, edge_df,close):
         global G_simple
         print("clicked")
         global node_label
-        
+
         node_pd=pd.DataFrame(node_df)
         edge_pd=pd.DataFrame(edge_df)
         G,nb=create_graph(node_pd,edge_pd,node_emphasize=True)
@@ -926,19 +922,19 @@ def build_graph(n, node_df, edge_df,close):
 
         #global G_simple
         G_simple=nx.Graph(G)
-        
+
         print(G.number_of_edges())
         print(G.number_of_nodes())
         #info="No of Nodes: " + str(G.number_of_nodes())+"|No of Edges: "+str(G.number_of_edges())
-        
+
         print_info=[html.Br(),
                     html.Div(children="No of Nodes: " + str(G.number_of_nodes())),
                     html.Div(children="No of Edges: "+str(G.number_of_edges())),
                     html.Div(children="Average Degree: "+str(np.round((2*G.number_of_edges())/G.number_of_nodes(),4))),
                     html.Div(children="Is Graph Multiple? "+str(G.is_multigraph()))]
-        
+
         return True,print_info
-    
+
 @app.callback(
     Output('edge_info', 'children'),
     Output('edge_selected','children'),
@@ -1009,7 +1005,7 @@ def show_edge_info(tap_edge):
     State("community_data", "data"),
     Input("sp_show", "on")
 )
-def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,color_tab,color_click,com_on,community_data,sp_show):    
+def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,color_tab,color_click,com_on,community_data,sp_show):
     if color_click is not None:
         node_color=color_tab[0]['props']['children'][0]['props']['value']['hex']
         node_label_color=color_tab[1]['props']['children'][0]['props']['value']['hex']
@@ -1020,7 +1016,7 @@ def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,co
         edge_color='#ccd0d0'
         back_color='#494A4A'
         node_label_color="#FFFFFF"
-    if "show" in show:   
+    if "show" in show:
         node_style= [{
             "selector": 'node',
             'style': {
@@ -1044,7 +1040,7 @@ def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,co
             }
         }]
     print(node_color)
-    #############################     
+    #############################
     if sp_show==True:
         shortest_path_style=[{
             'selector': '.sp',
@@ -1054,16 +1050,16 @@ def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,co
                 "opacity": 1
                     }
                 }]
-        
+
         edge_style= [{
             "selector": 'edge',
             'style': {
                 "curve-style": "bezier",
                 "opacity": edge_value,
                 'width': size_slide_edge*2}
-            }] 
+            }]
         my_new_style_sheet=edge_style+node_style+shortest_path_style
-        
+
     else:
         edge_style= [{
             "selector": 'edge',
@@ -1073,14 +1069,14 @@ def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,co
                 'width': size_slide_edge*2,
                 "line-color":edge_color
             }
-        }] 
+        }]
         my_new_style_sheet=edge_style+node_style
-        
+
     print(edge_color)
     #styles_color=[whole_style_sheet[0]]
     #my_new_style_sheet=styles_color+edge_style+node_style
     #my_new_style_sheet=edge_style+node_style
-    
+
     if com_on:
         if community_data is not None:
             communities=json.loads(community_data)
@@ -1088,7 +1084,7 @@ def update_style(edge_value,size_slide_edge,node_value,whole_style_sheet,show,co
             com_color_style=coloring(best_communities)
             my_new_style_sheet=my_new_style_sheet+com_color_style
     style={'width': '100%', 'height': '500px', "background-color":back_color}
-    
+
     return my_new_style_sheet,style
 
 @app.callback(
@@ -1134,9 +1130,9 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
             button_id = ctx.triggered[0]['prop_id'].split('.')[0]
             print("item_id:",button_id)
             if button_id=="betweenness_data" or button_id=="closeness_data" or button_id=="eigenvector_data" or button_id=="clustering_data":
-                 raise PreventUpdate 
+                 raise PreventUpdate
             elif button_id=="GCC":
-                inp=int(n_GCC%2) 
+                inp=int(n_GCC%2)
                 if inp==0:
                     print(button_id,"Clicked")
                     print("I am also here")
@@ -1149,14 +1145,14 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                     #G_final=G_subgraph_simple
                     caption="Plot all Connected Components"
                     graph_type="GCC"
-                elif inp==1:            
+                elif inp==1:
                     #global G_final
                     print(button_id,"Clicked")
                     #G_final_3=G_simple.copy()
                     classes_simple=create_unique_class(G_simple)
                     nodes_edges_Cy_lbl_new,nodes_edges_Cy_wo_lbl_new=create_elements(G_simple,classes_simple,G)
                     #G_final=G_simple
-                    caption="Plot only Giant Connected Component"
+                    caption="Plot Giant Connected Component"
                     graph_type="allC"
                 return nodes_edges_Cy_lbl_new,lyout,"random",caption,graph_type,no_update,no_update
             elif button_id=='dpdn':
@@ -1168,12 +1164,12 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                     return no_update,lyt,layout_value,no_update,no_update,no_update,no_update
                 else:
                     return no_update,lyt,layout_value,no_update,no_update,no_update,no_update
-                
-            ######Communitiy Detection   
+
+            ######Communitiy Detection
             elif button_id=="detect_communities":
                 if g_type=="GCC":
                     no=G_subgraph_multi.number_of_nodes()
-                    my_g_simple=nx.Graph(G_subgraph_multi) 
+                    my_g_simple=nx.Graph(G_subgraph_multi)
                     my_g_org=G_subgraph_multi
                 elif g_type=="allC":
                     no=G.number_of_nodes()
@@ -1181,30 +1177,30 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                     my_g_org=G
 
                 comunities,modularity=get_communities(my_g_org)
-                
+
                 nodes_edges_Cy_lbl_new,_=create_elements(my_g_simple,comunities,my_g_org)
                 print("I am done with community detection")
-                
+
                 no_com=len(np.unique(list(comunities.values())))
                 print_info=[html.Br(),
                     html.Div(children="Method: Louvain Algorithm"),
                     html.Div(children="No of Communities: " + str(no_com)),
                     html.Div(children="Modularity Score "+str(np.round(modularity,4)))]
                 community_data = json.dumps(comunities)
-                                             
+
                 return nodes_edges_Cy_lbl_new,no_update,no_update,no_update,no_update,print_info,community_data
-                
-            ######End           
-            #############Shortest_path 
+
+            ######End
+            #############Shortest_path
             elif button_id=="compute_shortest":
                 if source is not None and target is not None:
                     if g_type=="GCC":
                         no=G_subgraph_multi.number_of_nodes()
-                        my_g_simple=nx.Graph(G_subgraph_multi) 
+                        my_g_simple=nx.Graph(G_subgraph_multi)
                     elif g_type=="allC":
                         no=G.number_of_nodes()
                         my_g_simple=G_simple
-                        
+
                     source=node_label.get(source.lower(),False)
                     target=node_label.get(target.lower(),False)
                     if source and target:
@@ -1243,20 +1239,20 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                 if centrality_option != "None":
                     print("centrality_option",centrality_option)
                     if centrality_option=="degree":
-                        for i in range(no):    
-                            deg=my_g.degree(int(elements[i]['data']["id"])) 
+                        for i in range(no):
+                            deg=my_g.degree(int(elements[i]['data']["id"]))
                             de_norm=(deg-mn)/mx
-                            elements[i]['data']['size']= int((1 + de_norm*10 )* scale) 
+                            elements[i]['data']['size']= int((1 + de_norm*10 )* scale)
                         return elements,no_update,no_update,no_update,no_update,no_update,no_update
 
                     if centrality_option=="betweenness":
                         if betweenness_data is not None:
                             r_normalized=json.loads(betweenness_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
                             return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
                             return no_update,no_update,no_update,no_update,no_update,no_update,no_update
@@ -1265,10 +1261,10 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                         if closeness_data is not None:
                             r_normalized=json.loads(closeness_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
                             return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
                             return no_update,no_update,no_update,no_update,no_update,no_update,no_update
@@ -1277,10 +1273,10 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                         if eigenvector_data is not None:
                             r_normalized=json.loads(eigenvector_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
                             return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
                             return no_update,no_update,no_update,no_update,no_update,no_update,no_update
@@ -1289,19 +1285,19 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                         if clustering_data is not None:
                             r_normalized=json.loads(clustering_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
                             return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
                             return no_update,no_update,no_update,no_update,no_update,no_update,no_update
 
                 if centrality_option == "None":
-                    for i in range(no):    
+                    for i in range(no):
                         elements[i]['data']['size']=int(5 * scale)
-                    return elements,no_update,no_update,no_update,no_update,no_update,no_update 
-                return no_update,no_update,no_update,no_update,no_update,no_update,no_update 
+                    return elements,no_update,no_update,no_update,no_update,no_update,no_update
+                return no_update,no_update,no_update,no_update,no_update,no_update,no_update
 
             elif button_id=="size_slide":
                 if g_type=="GCC":
@@ -1312,67 +1308,67 @@ def Change_element(n_GCC,layout_value,g_type,elements,centrality_option,scale,be
                     my_g=G
                 if centrality_option != "None":
                     if centrality_option=="degree":
-                        for i in range(no):    
-                            deg=my_g.degree(int(elements[i]['data']["id"])) 
+                        for i in range(no):
+                            deg=my_g.degree(int(elements[i]['data']["id"]))
                             de_norm=(deg-mn)/mx
-                            elements[i]['data']['size']= int((1 + de_norm*10 )* scale)  
-                        return elements,no_update,no_update,no_update,no_update,no_update,no_update 
+                            elements[i]['data']['size']= int((1 + de_norm*10 )* scale)
+                        return elements,no_update,no_update,no_update,no_update,no_update,no_update
 
                     if centrality_option=="betweenness":
                         if betweenness_data is not None:
                             r_normalized=json.loads(betweenness_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
-                            return elements,no_update,no_update,no_update,no_update,no_update,no_update 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
+                            return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
-                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update 
+                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update
 
                     if centrality_option=="closeness":
                         if closeness_data is not None:
                             r_normalized=json.loads(closeness_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
-                            return elements,no_update,no_update,no_update,no_update,no_update,no_update 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
+                            return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
-                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update 
+                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update
 
                     if centrality_option=="eigenvector":
                         if eigenvector_data is not None:
                             r_normalized=json.loads(eigenvector_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
-                            return elements,no_update,no_update,no_update,no_update,no_update,no_update 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
+                            return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
-                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update 
+                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update
 
                     if centrality_option=="clustering":
                         if clustering_data is not None:
                             r_normalized=json.loads(clustering_data)["r_normalized"]
                             #r,r_normalized=get_centrality(G_simple,"betweenness")
-                            for i in range(no):    
+                            for i in range(no):
                                 #deg=my_g.degree(int(elements[i]['data']["id"]))
                                 bet=r_normalized[elements[i]['data']["id"]]
-                                elements[i]['data']['size']= int((1 + bet*10 )* scale) 
-                            return elements,no_update,no_update,no_update,no_update,no_update,no_update 
+                                elements[i]['data']['size']= int((1 + bet*10 )* scale)
+                            return elements,no_update,no_update,no_update,no_update,no_update,no_update
                         else:
-                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update 
+                            return no_update,no_update,no_update,no_update,no_update,no_update,no_update
                 if centrality_option == "None":
-                    for i in range(no):    
+                    for i in range(no):
                         elements[i]['data']['size']=int(5 * scale)
-                    return elements,no_update,no_update,no_update,no_update,no_update,no_update 
-                return no_update,no_update,no_update,no_update,no_update,no_update,no_update 
+                    return elements,no_update,no_update,no_update,no_update,no_update,no_update
+                return no_update,no_update,no_update,no_update,no_update,no_update,no_update
 
 
-            
+
 @app.callback(
     Output('deg_dist_bar','figure'),
     Output('node_info', 'children'),
@@ -1425,7 +1421,7 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
             if {'label': "Degree Centrality", 'value': "degree"} not in options:
                 options.append({'label': "Degree Centrality", 'value': "degree"})
             return fig.update_layout(template='plotly_dark',plot_bgcolor= 'rgba(0, 0, 0, 0)',paper_bgcolor= 'rgba(0, 0, 0, 0)'),no_update,no_update,options,no_update,no_update,no_update,no_update
-        
+
         elif button_id=="compute_betweenness":
             r,r_normalized=get_centrality(G_simple,"betweenness")
             if {'label': "Betweenness Centrality", 'value': "betweenness"} not in options:
@@ -1435,7 +1431,7 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
             else:
                 json_betweenness=no_update
             return no_update,no_update,no_update,options,json_betweenness,no_update,no_update,no_update
-        
+
         elif button_id=="compute_closeness":
             r,r_normalized=get_centrality(G_simple,"closeness")
             if {'label': "Closeness Centrality", 'value': "closeness"} not in options:
@@ -1445,7 +1441,7 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
             else:
                 closeness_data=no_update
             return no_update,no_update,no_update,options,no_update,closeness_data,no_update,no_update
-        
+
         elif button_id=="compute_eigenvector":
             r,r_normalized=get_centrality(G_simple,"eigenvector")
             if {'label': "Eigenvector Centrality", 'value': "eigenvector"} not in options:
@@ -1455,8 +1451,8 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
             else:
                 eigenvector_data=no_update
             return no_update,no_update,no_update,options,no_update,no_update,eigenvector_data,no_update
-        
-        
+
+
         elif button_id=="compute_clustering":
             r,r_normalized=get_centrality(G_simple,"clustering")
             if {'label': "Clustering", 'value': "clustering"} not in options:
@@ -1466,7 +1462,7 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
             else:
                 clustering_data=no_update
             return no_update,no_update,no_update,options,no_update,no_update,no_update,clustering_data
-        
+
         elif button_id=='org-chart':
             dtTable={}
             node=int(tap_node["id"])
@@ -1487,7 +1483,7 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
                 dtTable['Clustering Coef.']=np.round(json.loads(clu)["r"][str(node)],5)
             if cm is not None:
                 dtTable['Community ID']=json.loads(cm)[str(node)]
-                
+
             tbl=pd.DataFrame.from_records([dtTable])
             ds_tbl=dash_table.DataTable(
                 id='node_information',
@@ -1518,16 +1514,16 @@ def compute_centrality(n,n_between,n_closness,n_eigen,n_clustering,g_type,tap_no
             print(node)
 
             return fig.update_layout(template='plotly_dark',plot_bgcolor= 'rgba(0, 0, 0, 0)',paper_bgcolor= 'rgba(0, 0, 0, 0)'),ds_tbl,node,no_update,no_update,no_update,no_update,no_update
-        
-        
+
+
         elif button_id=="graph_type":
             df=degree_dist_df(my_G,q,None)
             fig=px.bar(df,x="Degree",y="Freq",color="Selected")
             return fig.update_layout(template='plotly_dark',plot_bgcolor= 'rgba(0, 0, 0, 0)',paper_bgcolor= 'rgba(0, 0, 0, 0)'),no_update,no_update,no_update,no_update,no_update,no_update,no_update
-        
+
         elif button_id=="selected_node":
             return no_update,no_update,no_update,no_update,no_update,no_update,no_update,no_update
-        
+
         elif button_id=="quartile_dist":
             if selected_node is not None:
                 print("selected_node",selected_node)
