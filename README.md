@@ -24,6 +24,8 @@ and [Atefeh Bahrami](mailto:atefeh.bahrami@student.uclouvain.be)
 at EPL, Université catholique de Louvain, December 2021.
 
 ## Demo
-BioVisualizer is deployed [here](https://nimafarnoodian.pythonanywhere.com/).
+### [Deployment](https://nimafarnoodian.pythonanywhere.com/)
+
+### [Tutorial](./files/report-tutorial.pdf) 
 
 ![BioVisualizer Image](./biovisualizer.png)
