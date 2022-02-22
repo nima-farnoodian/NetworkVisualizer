@@ -15,6 +15,8 @@ Information visualization dashboard to visualize a glioblastoma gene interaction
 
 - depicting multiple views of the graph structure
 
+- etc. 
+
 ## Our response
 
 In order to achieve this goal, we developed a user-friendly dashboard (called **BioVisualizer**) with Python 3 and [Dash](https://dash.plotly.com/introduction)
