@@ -25,3 +25,5 @@ at EPL, Université catholique de Louvain, December 2021.
 
 ## Demo
 BioVisualizer is deployed [here](https://nimafarnoodian.pythonanywhere.com/).
+
+![BioVisualizer Image](./biovisualizer.png)
