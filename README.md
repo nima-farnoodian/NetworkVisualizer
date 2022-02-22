@@ -22,3 +22,6 @@ framework for building GUI. Dash is a powerful framework built specially for cre
 Dash. Moreover, as we required to apply some network algorithms such as Community Detection, Shortest-path, we used python NetworkX library. This Dashbord was designed by [Nima Farnoodian](mailto:nima.farnoodian@student.uclouvain.be)
 and [Atefeh Bahrami](mailto:atefeh.bahrami@student.uclouvain.be)
 at EPL, Université catholique de Louvain, December 2021.
+
+## Demo
+BioVisualizer is deployed [here](https://nimafarnoodian.pythonanywhere.com/).
