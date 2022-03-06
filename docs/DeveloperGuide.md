@@ -3,6 +3,9 @@
 The project team inends to maintain a containerized workspace so as to better facilitate contributions from contributors who might otherwise favor disparate development environments.
 
 ## Standing up a local workspace
+**Prerequisites:**
+[docker](https://docs.docker.com/get-docker/)
+
 The [workspace directory](../workspace) contains a Dockerfile which will need to be built locally.
 
 ```
