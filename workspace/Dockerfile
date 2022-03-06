@@ -4,8 +4,10 @@ RUN pip3 install virtualenvwrapper
 RUN apt update && \
     apt install vim -y
 
-WORKDIR /
+WORKDIR /nvworkspace
 COPY ./update-profile.sh ./update-profile.sh
 RUN ./update-profile.sh
+
+EXPOSE 8888
 
 CMD ["bash"]
