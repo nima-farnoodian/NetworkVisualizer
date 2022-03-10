@@ -30,4 +30,7 @@ at EPL, Université catholique de Louvain, December 2021.
 
 ### [Tutorial](./files/report-tutorial.pdf) 
 
-![BioVisualizer Image](./biovisualizer.png)
+![BioVisualizer Image](./docs/biovisualizer.png)
+
+### Local Development Workspace
+Please see the [developer guide](./docs/DeveloperGuide.md)
